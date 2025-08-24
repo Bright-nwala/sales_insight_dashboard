@@ -27,7 +27,7 @@ st.write("Welcome! This dashboard helps track performance, customers, and revenu
 # ---- Data loading (cached) ---------------------------------------------------
 @st.cache_data
 def get_data():
-    return load_data("data/cleaned_data.csv")
+    return load_data("sales_metrics_db/data/cleaned_data.csv")
 
 df = get_data()
 dff = df  # keep a separate alias for 'filtered df' if you add filters later
@@ -89,3 +89,4 @@ st.markdown("---")
 st.caption(
     "© 2025 Retail Analytics | v1.0 • Deploy: Streamlit Community Cloud → New app → select your final script."
 )
+
